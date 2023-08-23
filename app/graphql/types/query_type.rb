@@ -7,9 +7,13 @@ module Types
     # Add root-level fields here.
     # They will be entry points for queries on your schema.
 
+    field :items, [Types::ItemType], null: false, description: "Return a list of items"
+    def items
+      Item.all
+    end
+
     # TODO: remove me
-    field :test_field, String, null: false,
-      description: "An example field added by the generator"
+    field :test_field, String, null: false, description: "An example field added by the generator"
     def test_field
       "Hello World!"
     end
