@@ -17,5 +17,7 @@ module Types
     def test_field
       "Hello World!"
     end
+
+    field :fetch_notes, resolver: Queries::FetchNotes
   end
 end

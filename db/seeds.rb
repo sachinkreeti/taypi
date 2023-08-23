@@ -40,3 +40,10 @@ Item.create!(
     }
   ]
 )
+
+10.times do |i|
+  Note.create!(
+    title: "Note #{i + 1}",
+    body: "Some random body for note #{i + 1}"
+  )
+end
