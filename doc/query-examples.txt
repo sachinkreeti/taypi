@@ -1,0 +1,24 @@
+query {
+  items {
+    id
+    title
+    description
+  }
+}
+// =========================
+
+Fetching unrelated data
+
+query {
+  items {
+    id
+    title
+  }
+  fetchNotes {
+    id
+    title
+    body
+  }
+}
+
+// =========================
